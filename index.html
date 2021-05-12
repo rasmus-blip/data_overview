@@ -7,29 +7,80 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="Peter">
-      <p class="navn"></p>
-      <p class="status"></p>
-      <p class="serving"></p>
-      <p class="using_tap"></p>
-      <p class="detail"></p>
+    <div id="bar" style="background-color: aqua">
+      <p class="name"></p>
+      <p class="closingTime"></p>
     </div>
 
-    <div id="Dannie">
-      <p class="navn"></p>
-      <p class="status"></p>
-      <p class="serving"></p>
-      <p class="using_tap"></p>
-      <p class="detail"></p>
+    <!-- template clone, forEach -->
+    <div id="queue" style="background-color: deeppink"></div>
+
+    <template id="queue_temp">
+      <div>
+        <p class="id"></p>
+        <p class="startTime"></p>
+        <!-- order er et array, forEach eller stringify -->
+        <p class="order"></p>
+      </div>
+    </template>
+
+    <!-- template clone, forEach -->
+    <div id="serving" style="background-color: teal">
+      <p class="id"></p>
+      <p class="startTime"></p>
+      <!-- order er et array, forEach eller stringify -->
+      <p class="order"></p>
     </div>
 
-    <div id="Jonas">
-      <p class="navn"></p>
-      <p class="status"></p>
-      <p class="serving"></p>
-      <p class="using_tap"></p>
-      <p class="detail"></p>
+    <div id="bartenders" style="background-color: rgb(238, 173, 173)">
+      <div id="Peter">
+        <p class="navn">Peter</p>
+        <p class="status"></p>
+        <p class="serving"></p>
+        <p class="using_tap"></p>
+        <p class="detail"></p>
+      </div>
+
+      <div id="Dannie">
+        <p class="navn">Dannie</p>
+        <p class="status"></p>
+        <p class="serving"></p>
+        <p class="using_tap"></p>
+        <p class="detail"></p>
+      </div>
+
+      <div id="Jonas">
+        <p class="navn">Jonas</p>
+        <p class="status"></p>
+        <p class="serving"></p>
+        <p class="using_tap"></p>
+        <p class="detail"></p>
+      </div>
     </div>
+
+    <!-- template clone, forEach -->
+    <div id="taps" style="background-color: rgb(156, 230, 230)"></div>
+
+    <template id="taps_temp">
+      <div>
+        <p class="id"></p>
+        <p class="level"></p>
+        <p class="capacity"></p>
+        <p class="beer"></p>
+        <p class="inUse"></p>
+        <img src="" alt="" />
+      </div>
+    </template>
+
+    <div id="storage" style="background-color: rgb(152, 244, 144)"></div>
+
+    <template id="storage_temp">
+      <div>
+        <p class="name"></p>
+        <p class="amount"></p>
+        <img src="" alt="" />
+      </div>
+    </template>
 
     <script type="module" src="/main.js"></script>
   </body>
